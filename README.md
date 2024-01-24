@@ -1,3 +1,15 @@
+<h3>
+        <h3>CapSolver.com</h3>
+        <br>
+        <a href="https://dashboard.capsolver.com/passport/register?inviteCode=c0lAroQKe-UX">
+            <img src="https://discordapp.net/attachments/1118100754415235113/1199591417908043807/IMG_20240124_084750_440.png?ex=65c31991&is=65b0a491&hm=48471798334aad7cdba1ac4ceb03a3c38f8400e4498e56a8f22e564e0f3f40c3&" alt="Capsolver's Banner">
+        </a>
+</h3>
+<br>
+At the lowest price on the market, you may receive a variety of solutions, including reCAPTCHA V2, reCAPTCHA V3, hCaptcha, hCaptcha Click, FunCaptcha, picture-to-text, and more. With this service, 0.1s is the slowest speed ever measured.
+<hr>
+
+
 # roblox-account-creator
 
 an roblox account generator for kids,requests based.
