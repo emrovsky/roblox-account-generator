@@ -43,6 +43,9 @@ https://github.com/emrovsky/roblox-account-generator/assets/85563550/559aab42-e5
 
 - ❌ 25 Stars | verify mail
 
+##DONATE
+LhKwvuMYwua2bTn7B38W5p3KrVWCgEGUgS my ltc adress
+
 
 
 ## ✍️ Usage
