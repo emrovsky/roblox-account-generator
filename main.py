@@ -37,9 +37,9 @@ class RobloxGen:
             'upgrade-insecure-requests': '1',
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         }
-        if settings_json["use_proxy"]:
-            self.proxy = random.choice(open("proxy.txt", "r").readlines()).strip()
-            self.session.proxies = {'http': 'http://' + self.proxy.strip(), 'https': 'http://' + self.proxy.strip()}
+
+        self.proxy = random.choice(open("proxy.txt", "r").readlines()).strip()
+        self.session.proxies = {'http': 'http://' + self.proxy.strip(), 'https': 'http://' + self.proxy.strip()}
         self.mailapi = modules.mailtm.MailTM()
         self.mail = self.mailapi.create_account(self.mailapi.get_domain())["mail"]
         self.account_passw = random_strings.random_string(12)
@@ -66,7 +66,10 @@ class RobloxGen:
         response = self.session.get(
             f'https://auth.roblox.com/v1/validators/username?Username={nickname}&Birthday={self.birthdate}',
         )
-        self.nickname = random.choice(response.json()["suggestedUsernames"])
+        try:
+            self.nickname = random.choice(response.json()["suggestedUsernames"])
+        except:
+            self.nickname = nickname
 
     def signup_request(self):
 
@@ -111,14 +114,15 @@ class RobloxGen:
 
         try:
             captcha_solution = capsolver.solve({
-                "type": "FunCaptchaTaskProxyLess",
+                "type": "FunCaptchaTask",
                 "websiteURL": "https://www.roblox.com",
                 "websitePublicKey": "A2A14B1D-1AF3-C791-9BBC-EE33CC7A0A6F",
                 "funcaptchaApiJSSubdomain": "https://roblox-api.arkoselabs.com",
-                "data": "{\"blob\":\"" + dataExchangeBlob + "\"}"
+                "data": "{\"blob\":\"" + dataExchangeBlob + "\"}",
+                "proxy":"http://"+self.proxy
             })["token"]
-        except:
-            loguru.logger.error("capsolver can't solve captcha..")
+        except Exception as E:
+            loguru.logger.error(f"capsolver can't solve captcha.. {E}")
             return ""
 
         self.session.headers["authority"] = "apis.roblox.com"
