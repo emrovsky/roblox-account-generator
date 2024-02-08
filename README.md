@@ -43,8 +43,7 @@ https://github.com/emrovsky/roblox-account-generator/assets/85563550/559aab42-e5
 
 - ❌ 25 Stars | verify mail
 
-##DONATE
-LhKwvuMYwua2bTn7B38W5p3KrVWCgEGUgS my ltc adress
+
 
 
 
@@ -53,6 +52,9 @@ LhKwvuMYwua2bTn7B38W5p3KrVWCgEGUgS my ltc adress
 2. put your proxies in proxy.txt (optional)
 3. set your capsolver key into settings.json,set thread count and proxy/proxyless setting too
 4. run with python main.py
+
+## DONATE
+LhKwvuMYwua2bTn7B38W5p3KrVWCgEGUgS my ltc adress
 
 
 ## ⚠️ DISCLAIMER
