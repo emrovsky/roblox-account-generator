@@ -1,5 +1,5 @@
 {
-  "capsolver_key": "CAP-XXXXXXXXXXXXXXXXXX",
-  "thread_count": 10,
-  "use_proxy": true
+  "capsolver_key": "CAP-XXXXXXX",
+  "thread_count": 50,
+  "verify_mail": true
 }

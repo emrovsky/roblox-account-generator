@@ -32,16 +32,16 @@ https://github.com/emrovsky/roblox-account-generator/assets/85563550/559aab42-e5
 
 ## 👾 Features
 - request based creator
-- solves funcaptcha with api
+- solves funcaptcha with capsolver api
 - set up email
-- saves username:password:mail:roblosecurity_cookie
-- proxy/proxyless support
-- custom thread support
+- saves username:password:mail:mailpassword:roblosecurity_cookie, u can access mail on mail.tm
+- threading support
 
 
 ## 🌟 Stars to Unlock
 
-- ❌ 25 Stars | verify mail
+- ✅ 25 Stars | verify mail
+- ❌ 50 Stars | open an github issue and tell me!
 
 
 
