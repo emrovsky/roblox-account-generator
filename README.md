@@ -42,8 +42,8 @@ https://github.com/emrovsky/roblox-account-generator/assets/85563550/df93cd44-d4
 
 ## ✍️ Usage
 1. Install requirements with pip install
-2. put your proxies in proxy.txt (optional)
-3. set your capsolver key into settings.json,set thread count and proxy/proxyless setting too
+2. put your proxies in proxy.txt
+3. set your capbypass key into settings.json, and make settings
 4. run with python main.py
 
 ## DONATE
