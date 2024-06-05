@@ -1,6 +1,8 @@
 
 # roblox-account-creator
 
+<a href="https://discord.gg/switchuwu"><img src="https://discordapp.com/api/guilds/1241323594567520337/widget.png?style=banner2"></a>
+
 an roblox account generator for kids,requests based.
 
 
