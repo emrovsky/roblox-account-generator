@@ -13,10 +13,6 @@ an roblox account generator for kids,requests based.
 
 
 
-https://github.com/emrovsky/roblox-account-generator/assets/85563550/603f799c-b973-4bff-b411-e09ef93987ff
-
-
-
 
 
 
@@ -26,13 +22,13 @@ https://github.com/emrovsky/roblox-account-generator/assets/85563550/603f799c-b9
 - set up email
 - saves username:password:mail:mailpassword:roblosecurity_cookie, u can access mail on mail.tm
 - threading support
+- humanized accounts, with bio, avatar, etc.
 
 
 ## 🌟 Stars to Unlock
 
 - ✅ 25 Stars | verify mail
-- ✅ 50 Stars | humanize the creator, bio, avatar..
-- ✅ 100 Stars | open a issue and tell me!
+- ✅ 50 Stars | humanize the creator, bio, avatar.
 
 
 
