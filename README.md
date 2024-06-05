@@ -1,14 +1,3 @@
-<h3>
-        <h3>CapSolver.com</h3>
-        <br>
-        <a href="https://dashboard.capsolver.com/passport/register?inviteCode=c0lAroQKe-UX">
-            <img src="https://cdn.discordapp.com/attachments/1118100754415235113/1199591417908043807/IMG_20240124_084750_440.png?ex=65c31991&is=65b0a491&hm=48471798334aad7cdba1ac4ceb03a3c38f8400e4498e56a8f22e564e0f3f40c3&" alt="Capsolver's Banner">
-        </a>
-</h3>
-<br>
-At the lowest price on the market, you may receive a variety of solutions, including reCAPTCHA V2, reCAPTCHA V3, hCaptcha, hCaptcha Click, FunCaptcha, picture-to-text, and more. With this service, 0.1s is the slowest speed ever measured.
-<hr>
-
 
 # roblox-account-creator
 
@@ -16,13 +5,9 @@ an roblox account generator for kids,requests based.
 
 
 
-❗️you can create an capsolver account and buy a api key from [here](https://dashboard.capsolver.com/passport/register?inviteCode=c0lAroQKe-UX)
+❗️you can create a capbypass account and buy an api key from [here](https://capbypass.com/signup?inviteCode=1hneCOA)
 
 ## 💻 Preview
-
-
-
-![image](https://github.com/emrovsky/roblox-account-generator/assets/85563550/bc420c0e-d3ba-4160-a5e8-9ca224a5a2fd)
 
 
 
@@ -42,7 +27,8 @@ an roblox account generator for kids,requests based.
 ## 🌟 Stars to Unlock
 
 - ✅ 25 Stars | verify mail
-- ❌ 50 Stars | open an github issue and tell me!
+- ✅ 50 Stars | humanize the creator, bio, avatar..
+- ✅ 100 Stars | open a issue and tell me!
 
 
 
