@@ -3,6 +3,8 @@ import json
 import time
 import random
 import base64
+from concurrent.futures import ThreadPoolExecutor
+
 import loguru
 import requests
 import threading
@@ -376,26 +378,11 @@ if proxy == []:
     exit()
 
 
-def main():
-    thread_count = settings_json["thread_count"]
-    total_generate_count = int(input("How many accounts do you want to gen > "))
-    generate_per_thread = total_generate_count / thread_count
-    if total_generate_count % thread_count != 0:
-        loguru.logger.error(
-            "set the total number of accounts to be created divided by the number of threads to 0"
-        )
-        exit()
+thread_count = settings_json["thread_count"]
+total_generate_count = int(input("How many accounts do you want to gen > "))
+generate_per_thread = total_generate_count / thread_count
 
-    for a in range(int(generate_per_thread)):
-        threads = []
-        for _ in range(thread_count):
-            t = threading.Thread(target=generate)
-            threads.append(t)
-        for thread in threads:
-            thread.start()
-        for thread in threads:
-            thread.join()
+with ThreadPoolExecutor(max_workers=thread_count) as executor:
+    for i in range(total_generate_count):
 
-
-if __name__ == "__main__":
-    main()
+        executor.submit(generate)
