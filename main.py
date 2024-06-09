@@ -23,20 +23,20 @@ class RobloxGen:
     def __init__(self):
         self.session = requests.Session()
         self.session.headers = {
-            "authority": "www.roblox.com",
-            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-            "accept-language": "en-US,en;q=0.5",
-            "pragma": "no-cache",
-            "sec-ch-ua": '"Not_A Brand";v="9", "Chromium";v="125", "Brave";v="125"',
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": '"Windows"',
-            "sec-fetch-dest": "document",
-            "sec-fetch-mode": "navigate",
-            "sec-fetch-site": "none",
-            "sec-fetch-user": "?1",
-            "sec-gpc": "1",
-            "upgrade-insecure-requests": "1",
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+            'accept': '*/*',
+            'accept-language': 'en-GB,en;q=0.9',
+            'cache-control': 'no-cache',
+            'origin': 'https://www.roblox.com',
+            'pragma': 'no-cache',
+            'priority': 'u=1, i',
+            'referer': 'https://www.roblox.com/',
+            'sec-ch-ua': '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-site',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         }
 
         self.proxy = random.choice(open("proxy.txt", "r").readlines()).strip()
@@ -60,7 +60,18 @@ class RobloxGen:
             '"'
         )[0]
         self.session.headers["x-csrf-token"] = self.csrf_token
+    def get_cookies(self):
 
+        response = self.session.get('https://www.roblox.com/timg/rbx')
+
+        self.session.cookies.update({"RBXcb": "RBXViralAcquisition=true&RBXSource=true&GoogleAnalytics=true"})
+
+        params = {
+            'name': 'ResourcePerformance_Loaded_funcaptcha_Computer',
+            'value': '2',
+        }
+
+        response = self.session.post('https://www.roblox.com/game/report-stats', params=params)
     def generate_birthday(self):
         birthdate = (
             datetime(
@@ -224,7 +235,6 @@ class RobloxGen:
         self.serverNonce = response.text.split('"')[1]
 
         self.session.headers["authority"] = "auth.roblox.com"
-
         response = self.signup_request()
 
         if "Token Validation Failed" in response.text:
@@ -291,6 +301,7 @@ class RobloxGen:
         del self.session.headers["rblx-challenge-metadata"]
 
         self.get_csrf()
+
         self.session.headers["authority"] = "accountsettings.roblox.com"
 
         json_data = {
@@ -361,6 +372,7 @@ def generate():
         try:
             gen = RobloxGen()
             gen.get_csrf()
+            gen.get_cookies()
             gen.verify_username()
             gen.generate_account()
             break
