@@ -22,7 +22,7 @@ class Solver:
                 "proxy": formatted_proxy,
                 "data": json.dumps({"blob": blob}),
                 "headers": {
-                    "acceptLanguage": "en-US,en;q=0.5",
+                    "acceptLanguage": "en-GB,en;q=0.9",
                     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
                 }
             }
