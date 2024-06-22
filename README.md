@@ -3,11 +3,20 @@
 
 <a href="https://discord.gg/switchuwu"><img src="https://discordapp.com/api/guilds/1241323594567520337/widget.png?style=banner2"></a>
 
+^^ **❗️ want proxies works on roblox and capbypass? just use capbypass proxies! ** ^^
+
+go discord.gg/switchuwu and write !help
+
+![preview]([http://url/to/img.png](http://animecum.lol/u/hxbDED.png))
+
+
 an roblox account generator for kids,requests based.
 
 
 
 ❗️you can create a capbypass account and buy an api key from [here](https://capbypass.com/signup?inviteCode=1hneCOA)
+
+
 
 ## 💻 Preview
 
