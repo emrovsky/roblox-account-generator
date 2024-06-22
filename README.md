@@ -7,6 +7,8 @@
 
 go discord.gg/switchuwu and write !help
 
+price: 2$/gb
+
 ![hxbDED](https://github.com/emrovsky/roblox-account-generator/assets/85563550/c8820a7c-e184-42bb-86c0-79276e3daa39)
 
 
