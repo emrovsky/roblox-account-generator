@@ -7,7 +7,7 @@
 
 go discord.gg/switchuwu and write !help
 
-![preview](http://animecum.lol/u/hxbDED.png)
+https://animecum.lol/r/hxbDED.png
 
 
 an roblox account generator for kids,requests based.
